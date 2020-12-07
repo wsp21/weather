@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#33B8E2"
+        >
+    </TextView>
+    <Spinner
+        android:id="@+id/select"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        >
+    </Spinner>
+    <ImageButton
+        android:id="@+id/cityicon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/city"
+        android:layout_marginTop="10dp"
+        android:background="#0000"
+        android:layout_toLeftOf="@+id/select"
+        >
+    </ImageButton>
+
+    <TextView
+        android:id="@+id/province"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="北京市"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/reporttime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2020-XX-XX 00:00:00  更新"
+        android:layout_below="@+id/province"
+        >
+    </TextView>
+
+    <TextView
+        android:id="@+id/kong"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="80dp">
+
+    </TextView>
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:textSize="30dp"
+        android:layout_below="@+id/kong"
+        android:text="城区:"
+        >
+    </TextView>
+    <TextView
+        android:id="@+id/city_"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@+id/city"
+        android:textSize="30dp"
+        android:layout_below="@+id/kong"
+        android:text="null"
+        >
+    </TextView>
+    <TextView
+        android:id="@+id/weather"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:textSize="30dp"
+        android:layout_toRightOf="@+id/city_"
+        android:layout_below="@+id/kong"
+        android:text="天气:"
+        >
+
+    </TextView>
+    <TextView
+        android:id="@+id/weather_"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:textSize="30dp"
+        android:layout_toRightOf="@+id/weather"
+        android:layout_below="@+id/kong"
+        android:text="null"
+        >
+
+    </TextView>
+    <TextView
+        android:id="@+id/kong1"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/city"
+        >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/kong1"
+        android:layout_marginLeft="50dp"
+        android:text="温度:"
+        android:textSize="30dp">
+
+    </TextView>
+    <TextView
+        android:id="@+id/temperature_"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/kong1"
+        android:layout_toRightOf="@+id/temperature"
+        android:textSize="30dp"
+        android:text="null"
+        >
+
+    </TextView>
+    <TextView
+        android:id="@+id/humidity"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@+id/temperature_"
+        android:layout_below="@+id/kong1"
+        android:textSize="30dp"
+        android:text="湿度:"
+        >
+
+    </TextView>
+    <TextView
+        android:id="@+id/humidity_"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@+id/humidity"
+        android:layout_below="@+id/kong1"
+        android:textSize="30dp"
+        android:text="null"
+        >
+
+    </TextView>
+    <TextView
+        android:id="@+id/kong2"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/temperature">
+
+    </TextView>
+    <TextView
+        android:id="@+id/winddirection"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/kong2"
+        android:layout_marginLeft="50dp"
+        android:textSize="30dp"
+        android:text="风向:"
+        >
+
+    </TextView>
+    <TextView
+        android:id="@+id/winddirection_"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/kong2"
+        android:layout_toRightOf="@+id/winddirection"
+        android:textSize="30dp"
+        android:text="null"
+        >
+
+    </TextView>
+    <TextView
+        android:id="@+id/windpower"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@+id/winddirection_"
+        android:layout_below="@+id/kong2"
+        android:textSize="30dp"
+        android:text="风力:"
+        >
+
+    </TextView>
+    <TextView
+        android:id="@+id/windpower_"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@+id/windpower"
+        android:layout_below="@+id/kong2"
+        android:textSize="30dp"
+        android:text="null"
+        >
+
+    </TextView>
+    <TextView
+        android:id="@+id/adcode"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="编号:"
+        android:layout_toLeftOf="@+id/adcode_"
+        android:layout_alignParentBottom="true"
+        >
+
+    </TextView>
+    <TextView
+        android:id="@+id/adcode_"
+        android:layout_width="60dp"
+        android:layout_height="25dp"
+        android:text="xxxxxx"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        >
+
+    </TextView>
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="选择城市"
+        android:textAlignment="center"
+        android:textSize="26dp"
+        android:textColor="@color/white"
+        android:background="#33B8E2"
+        android:gravity="center_vertical">
+    </TextView>
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/back"
+        android:scaleType="centerInside"
+        android:background="#0000"
+        >
+    </ImageButton>
+
+    <ListView
+        android:id="@+id/list1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bar"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:divider="#00000000"
+        android:dividerHeight="10dp">
+
+    </ListView>
+
+    <ImageButton
+        android:id="@+id/addButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerInside"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="#0000"
+        android:src="@drawable/float_btn">
+    </ImageButton>
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="125dp"
+    android:orientation="vertical"
+    android:background="@drawable/border"
+    >
+    <TextView
+        android:id="@+id/tv_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:text="空白城市"
+        >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_city"
+        android:text="温度"
+        android:layout_marginLeft="10dp"
+        android:textColor="#999"
+        android:textSize="24dp"
+        android:layout_marginTop="5dp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_weather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_temperature"
+        android:text="sun"
+        android:textColor="#999"
+        android:textSize="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp">
+    </TextView>
+</RelativeLayout>
