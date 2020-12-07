@@ -270,6 +270,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void update(String s) {
         String newUrl = url + "&city=" + s;
+
         final Request request = new Request.Builder().url(newUrl).get().build();
         new Thread(new Runnable() {
                 @Override
